@@ -6,14 +6,14 @@
 /*   By: lsahloul <lsahloul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 18:16:11 by lsahloul          #+#    #+#             */
-/*   Updated: 2025/04/24 21:21:26 by lsahloul         ###   ########.fr       */
+/*   Updated: 2025/04/24 22:01:40 by lsahloul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <signal.h>
-#include <unistd.h> //ALSO DONT FORGET THE BONUS!!
-#include <stdio.h> //ALSO DONT FORGET THE BONUS!!
-#include <string.h> //ALSO DONT FORGET THE BONUS!!
+#include <unistd.h>
+#include <stdio.h>
+#include <string.h>
 #include "libft/libft.h"
 
 void	handler(int sig)
@@ -50,7 +50,7 @@ int	main(int argc, char **argv)
 	{
 		signal(SIGUSR1, handler);
 		signal(SIGUSR2, handler);
-		pause ();
+		pause();
 	}
 	return (0);
 }
